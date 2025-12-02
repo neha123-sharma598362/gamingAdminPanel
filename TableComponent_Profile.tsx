@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { BiEdit, BiPaperPlane } from "react-icons/bi";
 import { TbLogs } from "react-icons/tb";
 
-// Define types for the user data
+
 interface Data {
   _id?: string | undefined;
   trxNumber?: string;
@@ -119,7 +119,7 @@ const TableComponent_Profile = ({TableData,TableHeading,Title='Data',dropDownOpt
       accountNumber: '77458999+',
       beneficiaryName: 'Gjuhbdfhjj',
       address: '6458990854',
-      nid: 'Image Description', // Placeholder for the NID image
+      nid: 'Image Description', 
     };
   
     // Feedback state
@@ -139,7 +139,7 @@ const TableComponent_Profile = ({TableData,TableHeading,Title='Data',dropDownOpt
     // Submit feedback (You can modify this to perform an actual submit)
     const handleSubmitFeedback = () => {
       console.log('Feedback submitted:', feedback);
-      closeModal(); // Close modal after submitting feedback
+      closeModal(); 
     };
 
 
