@@ -60,7 +60,7 @@ const TableComponent_Results = ({
   const openDialog = () => setIsOpen(true);
   const closeDialog = () => setIsOpen(false);
 
-  // ✅ FINAL FIXED SEARCH FUNCTION
+  
   const filteredData = TableData.filter((data) => {
     const term = searchTerm.toLowerCase();
 
