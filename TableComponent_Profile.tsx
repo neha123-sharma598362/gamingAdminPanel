@@ -111,7 +111,7 @@ const TableComponent_Profile = ({TableData,TableHeading,Title='Data',dropDownOpt
 
     const [isModalOpen, setIsModalOpen] = useState(false);
   
-    // Payment information
+    
     const paymentInfo = {
       amountPaid: '$23,809.52',
       datePaid: '15/11/2024',
@@ -122,21 +122,21 @@ const TableComponent_Profile = ({TableData,TableHeading,Title='Data',dropDownOpt
       nid: 'Image Description', 
     };
   
-    // Feedback state
+  
     const [feedback, setFeedback] = useState('');
   
-    // Open modal function
+    
     const openModal = () => setIsModalOpen(true);
   
-    // Close modal function
+    
     const closeModal = () => setIsModalOpen(false);
   
-    // Handle feedback change
+
     const handleFeedbackChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setFeedback(e.target.value);
     };
   
-    // Submit feedback (You can modify this to perform an actual submit)
+    
     const handleSubmitFeedback = () => {
       console.log('Feedback submitted:', feedback);
       closeModal(); 
