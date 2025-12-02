@@ -34,7 +34,7 @@ export default function BetterList() {
               let optionName = "N/A";
 
               try {
-                // Fetch question by market ID
+                
                 const qRes = await axios.get(
                   `http://localhost:2000/api/v1/admin/questions/${item.market}`
                 );
@@ -42,10 +42,10 @@ export default function BetterList() {
                 if (qRes.data?.data) {
                   const question = qRes.data.data;
 
-                  // Set Question Name
+                
                   questionName = question.question || "N/A";
 
-                  // Find the selected option
+                
                   const selectedOption = question.selections.find(
                     (s: any) => s._id === item.selection
                   );
